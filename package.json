@@ -4,7 +4,7 @@
   "description": "Template for React and Flux fron-end",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "webpack-dev-server --progress --colors",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
