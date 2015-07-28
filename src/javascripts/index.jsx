@@ -1,3 +1,4 @@
+import $ from './vendor/jquery.min'
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -6,4 +7,6 @@ import { history } from 'react-router/lib/HashHistory';
 
 import App from './components/App';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+$(document).ready( () => {
+  ReactDOM.render(<App />, document.getElementById("root"));
+})
