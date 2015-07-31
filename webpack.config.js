@@ -1,6 +1,6 @@
 module.exports = {
   entry: {
-    app: ["webpack/hot/dev-server", "./src/javascripts/app.jsx"]
+    app: ["webpack/hot/dev-server", "./src/javascripts/main.jsx"]
   },
   output: {
     path: __dirname,

@@ -1,23 +1,13 @@
 import $ from './vendor/jquery.min'
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-import { Router, Route, Link} from 'react-router';
-import { history } from 'react-router/lib/HashHistory';
-
-import Example from './components/Example';
-
-
-class App extends React.Component {
+export default class App extends React.Component {
   render() {
     return (
-      <div className="content-wrapper">
-        <Example />
+      <div className="app-wrapper">
+        <h1>Hello World</h1>
+        {this.props.children}
       </div>
     );
   }
 }
-
-$(document).ready( () => {
-  ReactDOM.render(<App />, document.getElementById("root"));
-})
